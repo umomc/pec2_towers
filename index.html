@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Where are Spain's mobile towers?</title>
+    <script type="module" crossorigin src="./assets/index-DHGaLAzN.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Bl3jSfzM.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p class="eyebrow">Mobile tower sites in Spain</p>
+        <h1>Where are Spain's mobile towers?</h1>
+        <p>Explore Spain's mobile tower sites and how nearest-site regions change by radio technology.</p>
+        <p class="data-badge">Data: OpenCelliD cell towers in Spain, downloaded on 25 October 2026. Crowdsourced: positions are estimates.</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="filters">
+        <span>Radio technology</span>
+        <div class="chips" id="radio"></div>
+        <button id="reset">Reset map</button>
+      </section>
+
+      <section class="layout">
+        <div id="map"></div>
+        <div class="side">
+          <aside>
+            <h2>Spain tower sites</h2>
+            <p class="label">Tower sites</p>
+            <p class="number" id="site-count">-</p>
+          </aside>
+          <aside>
+            <h2>Hovered site</h2>
+            <div id="details">Hover over a cell to see its records.</div>
+          </aside>
+        </div>
+      </section>
+
+      <p class="source"><b>How to read the map:</b> each cell is the area closest to a tower site by straight-line distance. Cells are clipped to the rectangle of available coordinates, not to the country border. Records with identical coordinates share one site.</p>
+            <p class="source">Basemap © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>. Cell tower data from <a href="https://opencellid.org">OpenCellID</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Changes: Spain only, grouped by exact coordinates; the adapted data is shared under the same license. Data retrieved on 25 October 2026.</p>
+    </main>
+
+  </body>
+</html>
